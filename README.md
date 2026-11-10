@@ -17,6 +17,10 @@ FAQs load from the local defaults so opening the site does not consume Gemini qu
 
 Vite exposes variables prefixed with `VITE_` in the browser bundle. Use this client-side setup only for local development; keep production API keys on a backend and never commit a real key.
 
+## GitHub Pages deployment
+
+The GitHub Actions workflow builds the Vite app and deploys the `dist` directory to GitHub Pages. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**. Each push to `main` then publishes the site at `https://geetharamalingam6-art.github.io/it-company-website/`.
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
